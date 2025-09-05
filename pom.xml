@@ -29,12 +29,11 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-                <version>4.3.0</version>
+				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHub2Deployment>
+					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						 <muleVersion>4.4.0</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
@@ -42,14 +41,17 @@
 						<region>${region}</region>
 						<workers>${workers}</workers>
 						<workerType>${workerType}</workerType>
-						<objectStoreV2>true</objectStoreV2>
+						<muleVersion>${app.runtime}</muleVersion>
+						<persistentObjectStore>true</persistentObjectStore>
+						<tracingEnabled>true</tracingEnabled>
+						<autoscaling>true</autoscaling>
 						<properties>
 							<key>value</key>
 						</properties>
-					</cloudHub2Deployment>
+					</cloudHubDeployment>
 				</configuration>
-
 			</plugin>
+
 		</plugins>
 	</build>
 
