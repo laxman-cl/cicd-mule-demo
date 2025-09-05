@@ -46,6 +46,10 @@
 						<properties>
 							<key>value</key>
 						</properties>
+						<deployment>
+							<target>CH2</target> <!-- instead of CH1 -->
+						</deployment>
+
 					</cloudHubDeployment>
 				</configuration>
 
