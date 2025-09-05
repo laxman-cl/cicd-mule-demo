@@ -46,7 +46,6 @@
 						<properties>
 							<key>value</key>
 						</properties>
-						<target>CH2</target> <!-- instead of CH1 -->
 					</cloudHubDeployment>
 				</configuration>
 
