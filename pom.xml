@@ -42,15 +42,13 @@
 						<workers>${workers}</workers>
 						<workerType>${workerType}</workerType>
 						<muleVersion>${app.runtime}</muleVersion>
-						<persistentObjectStore>true</persistentObjectStore>
-						<tracingEnabled>true</tracingEnabled>
-						<autoscaling>true</autoscaling>
 						<properties>
 							<key>value</key>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
+
 
 		</plugins>
 	</build>
